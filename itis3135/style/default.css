@@ -4,6 +4,8 @@ body{
 header{
     text-align: center;
     font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 30px;
     background-color: #d8bed8;
 }
@@ -13,12 +15,18 @@ footer {
     bottom: 0;
     width: 100%;
 }
+nav {
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    background-color: #564c56;
+    position: fixed;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #564c56;
   }
   
 nav li {
