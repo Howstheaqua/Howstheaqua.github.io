@@ -2,36 +2,60 @@ body{
     background-color: #bb8ebb;
 }
 header{
+    top:0;
     text-align: center;
     font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 30px;
     background-color: #d8bed8;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 80px;
+    color: #08415C;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
+header h2{
+    margin-top: 0.3em;
+}
+
 main {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #d8bed8;
+    color: #260C1A;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.3em;
+    padding-bottom: 1em;
 }
 footer {
     text-align: center;
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
+    background-color: #6B818C;
+    padding-top: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 nav {
     top: 0;
+    left: 0;
     width: 100%;
-    background-color: #564c56;
+    background-color: #403940;
     position: fixed;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+    padding: 0;
+    transition: top 0.3s;
 }
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
   }
@@ -46,10 +70,11 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 nav li a:hover, .dropdown:hover .dropbtn {
-    background-color: #2b262b;
+    background-color: #151315;
 }
 
 .dropdown {
@@ -63,8 +88,9 @@ nav li a:hover, .dropdown:hover .dropbtn {
     outline: none;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+    font-family: inherit;
+    margin: 0;
+    border-radius: 5px;
 }
 
 .dropdown-content {
@@ -74,6 +100,8 @@ nav li a:hover, .dropdown:hover .dropbtn {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .dropdown-content a {
     float: none;
@@ -82,6 +110,7 @@ nav li a:hover, .dropdown:hover .dropbtn {
     color: #bed8d8;
     display: block;
     text-align: left;
+    border-radius: 5px;
 }
 
 .dropdown-content a:hover {
@@ -89,4 +118,7 @@ nav li a:hover, .dropdown:hover .dropbtn {
 }
 .dropdown:hover .dropdown-content {
     display: block;
-  }
+}
+.cursorpointer:hover{
+    cursor: pointer;
+}
