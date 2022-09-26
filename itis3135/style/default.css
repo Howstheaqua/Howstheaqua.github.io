@@ -1,5 +1,17 @@
 body{
+    background-color: #bb8ebb;
+}
+header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
     background-color: #d8bed8;
+}
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 nav ul {
     list-style-type: none;
