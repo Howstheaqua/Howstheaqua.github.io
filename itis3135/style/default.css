@@ -1,5 +1,6 @@
 body{
     background-color: #bb8ebb;
+    margin-bottom: 4.5em;
 }
 header{
     top:0;
@@ -9,14 +10,18 @@ header{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 80px;
+    font-size: 20px;
     color: #08415C;
     text-align: center;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-header h2{
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
     margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+header h1{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding-top: 0.87em;
 }
 
 main {
@@ -29,17 +34,43 @@ main {
     padding-right: 1.5em;
     padding-top: 0.3em;
     padding-bottom: 1em;
+    border-radius: 0.4em;
+}
+main h2{
+    text-align: center;
+    size: 30px;
+}
+main figure{
+    text-align: center;
+}
+main figure img{
+    max-width: 100%;
+    height: auto;
 }
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #6B818C;
-    padding-top: 10px;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top: 0.3em solid #151315;  
+    background-color: #7CDEDC;
+    overflow: hidden;
+    margin: 0 auto;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+footer li{
+    display: block;
+    color: #bed8d8;
+    text-align: center;
+    padding: 0.1em 1em;
+    float:left;
 }
 nav {
     top: 0;
@@ -121,4 +152,12 @@ nav li a:hover, .dropdown:hover .dropbtn {
 }
 .cursorpointer:hover{
     cursor: pointer;
+}
+
+.center{
+    justify-content: center;
+}
+.footerborder{
+    border-top: #151315;
+    border-top-width: 0.3em;
 }
