@@ -7,7 +7,7 @@ header{
     top:0;
     text-align: center;
     font-weight: bold;
-    background-color: #d8bed8;
+    background-color: #CCE2A3;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -35,7 +35,8 @@ main {
     padding-right: 1.5em;
     padding-top: 0.3em;
     padding-bottom: 1em;
-    border-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
     z-index: 1;
 }
 main h2{
@@ -49,7 +50,28 @@ main figure img{
     max-width: 100%;
     height: auto;
 }
-footer {
+.foot{
+    border-top: 0.15em solid #151315; 
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CCE2A3;
+    color: #170312;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+}
+.foot a{
+    float: none;
+    text-decoration: none;
+    color: #170312;
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+    padding: 14px 16px;
+}
+.fixedfooter{
     display: flex;
     justify-content: center;
     position: fixed;
@@ -60,13 +82,13 @@ footer {
     background-color: #466060;
     margin: 0 auto;
 }
-footer ul {
+.fixedfooter ul, .foot ul{
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
 }
-footer li{
+.fixedfooter li, .foot li{
     display: block;
     color: #bed8d8;
     text-align: center;
@@ -105,12 +127,10 @@ nav li a {
     border-radius: 5px;
 }
 
-nav li a:hover, .dropdown:hover .dropbtn {
+nav li a:hover, .dropdown:hover .dropbtn, .fixedfooter li a:hover, .foot li a:hover {
     background-color: #151315;
 }
-footer li a:hover, .dropdown:hover .dropbtn {
-    background-color: #151315;
-}
+
 
 .dropdown {
     float: left;
@@ -126,7 +146,7 @@ footer li a:hover, .dropdown:hover .dropbtn {
     margin: 0;
     border-radius: 5px;
 }
-footer .dropdown-content{
+.fixedfooter .dropdown-content{
     bottom:51px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -165,8 +185,4 @@ footer .dropdown-content{
 
 .center{
     justify-content: center;
-}
-.footerborder{
-    border-top: #151315;
-    border-top-width: 0.3em;
 }
