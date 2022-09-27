@@ -1,6 +1,7 @@
 body{
     background-color: #bb8ebb;
     margin-bottom: 4.5em;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     top:0;
@@ -29,12 +30,13 @@ main {
     margin-left: auto;
     margin-right: auto;
     background-color: #d8bed8;
-    color: #260C1A;
+    color: #170312;
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-top: 0.3em;
     padding-bottom: 1em;
     border-radius: 0.4em;
+    z-index: 1;
 }
 main h2{
     text-align: center;
@@ -54,9 +56,8 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    border-top: 0.3em solid #151315;  
-    background-color: #7CDEDC;
-    overflow: hidden;
+    border-top: 0.15em solid #151315;  
+    background-color: #466060;
     margin: 0 auto;
 }
 footer ul {
@@ -69,7 +70,7 @@ footer li{
     display: block;
     color: #bed8d8;
     text-align: center;
-    padding: 0.1em 1em;
+    padding: 0.5em 1em;
     float:left;
 }
 nav {
@@ -107,10 +108,12 @@ nav li a {
 nav li a:hover, .dropdown:hover .dropbtn {
     background-color: #151315;
 }
+footer li a:hover, .dropdown:hover .dropbtn {
+    background-color: #151315;
+}
 
 .dropdown {
     float: left;
-    overflow: hidden;
 }
 .dropdown .dropbtn {
     color: #bed8d8;
@@ -122,6 +125,11 @@ nav li a:hover, .dropdown:hover .dropbtn {
     font-family: inherit;
     margin: 0;
     border-radius: 5px;
+}
+footer .dropdown-content{
+    bottom:51px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .dropdown-content {
@@ -149,6 +157,7 @@ nav li a:hover, .dropdown:hover .dropbtn {
 }
 .dropdown:hover .dropdown-content {
     display: block;
+    position: absolute;
 }
 .cursorpointer:hover{
     cursor: pointer;
