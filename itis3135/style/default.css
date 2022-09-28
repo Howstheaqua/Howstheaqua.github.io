@@ -38,6 +38,7 @@ main {
     border-top-left-radius: 0.4em;
     border-top-right-radius: 0.4em;
     z-index: 1;
+    
 }
 main h2{
     text-align: center;
@@ -81,6 +82,7 @@ main figure img{
     border-top: 0.15em solid #151315;  
     background-color: #466060;
     margin: 0 auto;
+    font-size: 10px;
 }
 .fixedfooter ul, .foot ul{
     list-style-type: none;
@@ -137,7 +139,7 @@ nav li a:hover, .dropdown:hover .dropbtn, .fixedfooter li a:hover, .foot li a:ho
 }
 .dropdown .dropbtn {
     color: #bed8d8;
-    font-size: 16px;
+    font-size: inherit;
     border: none;
     outline: none;
     padding: 14px 16px;
