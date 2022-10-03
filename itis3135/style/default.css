@@ -62,8 +62,7 @@ main figure img{
     border-bottom-left-radius: 0.4em;
     border-bottom-right-radius: 0.4em;
 }
-.foot a{
-    float: none;
+.foot li a{
     text-decoration: none;
     color: inherit;
     display: block;
@@ -83,23 +82,22 @@ main figure img{
     margin: 0 auto;
     font-size: 10px;
 }
-.fixedfooter dl, .foot dl{
+.fixedfooter ul, .foot ul{
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
 }
-.fixedfooter dt {
+.fixedfooter li {
     display: block;
     color: #bed8d8;
     text-align: center;
     padding: 0.5em 1em;
     float:left;
 }
-.foot dt {
-    display: block;
+.foot li {
+    display: inline-block;
     text-align: center;
     padding: 0.5em 1em;
-    float:left;
 }
 nav {
     top: 0;
@@ -114,19 +112,19 @@ nav {
     transition: top 0.3s;
     color: #bed8d8;
 }
-nav dl {
+nav ul {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
   }
   
-nav dt {
+nav li {
     float: left;
 }
 nav a{
     color: #bed8d8;
 }
-nav dt a {
+nav li a {
     display: block;
     color: #bed8d8;
     text-align: center;
@@ -135,10 +133,9 @@ nav dt a {
     border-radius: 5px;
 }
 
-nav dt a:hover, .dropdown:hover .dropbtn, .fixedfooter dt a:hover, .dropup-content a:hover{
+nav li a:hover, .dropdown:hover .dropbtn, .fixedfooter li a:hover, .dropup-content a:hover{
     background-color: #151315;
 }
-/* Dropup Button */
 
 .dropup .dropbtn {
     color: inherit;
@@ -151,14 +148,11 @@ nav dt a:hover, .dropdown:hover .dropbtn, .fixedfooter dt a:hover, .dropup-conte
     margin: 0;
     border-radius: 5px;
 }
-  
-  /* The container <div> - needed to position the dropup content */
   .dropup {
     position: relative;
     display: inline-block;
   }
-  
-  /* Dropup content (Hidden by Default) */
+
 .dropup-content {
     display: none;
     position: absolute;
@@ -185,7 +179,7 @@ nav dt a:hover, .dropdown:hover .dropbtn, .fixedfooter dt a:hover, .dropup-conte
 .dropup:hover .dropup-content {
     display: block;
 }
-.foot dt a:hover, .foot .dropup:hover .dropbtn{
+.foot li a:hover, .foot .dropup:hover .dropbtn{
     background-color: #667151;
 }
 .dropdown {
@@ -227,7 +221,7 @@ nav dt a:hover, .dropdown:hover .dropbtn, .fixedfooter dt a:hover, .dropup-conte
 .dropdown-content a:hover {
     background-color: #151315;
 }
-.foot dt a:hover, .foot .dropdown:hover .dropbtn{
+.foot li a:hover, .foot .dropdown:hover .dropbtn{
     background-color: #667151;
 }
 .dropdown:hover .dropdown-content {
