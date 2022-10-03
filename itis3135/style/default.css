@@ -157,6 +157,7 @@ nav li a:hover, .dropdown:hover .dropbtn, .fixedfooter li a:hover, .dropup-conte
     display: none;
     position: absolute;
     bottom: 47px;
+    color: #bed8d8;
     background-color: #403940;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -181,6 +182,9 @@ nav li a:hover, .dropdown:hover .dropbtn, .fixedfooter li a:hover, .dropup-conte
 }
 .foot li a:hover, .foot .dropup:hover .dropbtn{
     background-color: #667151;
+}
+.foot .dropup a:hover{
+    background-color: #151315;
 }
 .dropdown {
     position: relative;
@@ -221,7 +225,7 @@ nav li a:hover, .dropdown:hover .dropbtn, .fixedfooter li a:hover, .dropup-conte
 .dropdown-content a:hover {
     background-color: #151315;
 }
-.foot li a:hover, .foot .dropdown:hover .dropbtn{
+.foot li a:hover{
     background-color: #667151;
 }
 .dropdown:hover .dropdown-content {
