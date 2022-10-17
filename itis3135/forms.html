@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="style/default.css">
+        <link rel="stylesheet" href="../style/default.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <title>* Contact * Evan Hughes * ITIS 3135*</title>
+        <title>* Forms * Evan Hughes * ITIS 3135*</title>
         <script>document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
             </script>
@@ -15,7 +15,7 @@
     <body>
         <nav>
             <ul>
-                <li><img src='images/hedgehog.png' alt='hedgehog logo' height='40' width='40' style='filter: invert(92%) sepia(15%) saturate(245%) hue-rotate(130deg) brightness(95%) contrast(82%); padding-left: 0.1em;'></li>
+                <li><img src='../images/hedgehog.png' alt='hedgehog logo' height='40' width='40' style='filter: invert(92%) sepia(15%) saturate(245%) hue-rotate(130deg) brightness(95%) contrast(82%); padding-left: 0.1em;'></li>
                 <li><a href="index.html">Homepage</a></li>
                 <li>
                     <div class='dropdown'>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="../introduction.html">Introduction</a></li>
                 <li>
                     <div class='dropdown'>
                         <a class='dropbtn'>Course Assignments</a>
@@ -55,11 +55,41 @@
         </nav>
       
       <header>
-          <h1>Evan Hughes * ITIS 3135</h1>
+        <h1>Evan Hughes * ITIS 3135</h1>
       </header>
       
       <main>
-        <h2>Contact</h2>
+        <h2>Activity 3: Forms</h2>
+        <form action="#">
+            <label for='name'>Name: </label>
+            <input type='text' id='name' name='name' required='true'>
+            <label for='phone'>Phone Number:</label>
+            <input type='number' id='phone' name='phone' size='2'>
+            <label for='email'>Email: </label>
+            <input type='text' id='email' name='email' placeholder="example@web.com">
+            <p class='checkBoxHeader'>Which options?: </p>
+            <input type="checkbox" id="option1" name="option1" value="1">
+            <label for="option1">Option 1</label><br>
+            <input type="checkbox" id="option2" name="option2" value="2">
+            <label for="option2">Option 2</label><br>
+            <input type="checkbox" id="option3" name="option3" value="3">
+            <label for="option3">Option 3</label>
+            <p class='radioHeader'>Language?: </p>
+            <input type="radio" id="html" name="language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            <select>
+                <option>Test</option>
+                <option>Test 2</option>
+            </select>
+            <label for='resetButton'>Reset</label>
+            <input type='reset'>
+            <label for='submitButton'>Submit</label>
+            <input type="submit">
+        </form>
       </main>
   
       <footer>

@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="style/default.css">
+        <link rel="stylesheet" href="../style/default.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <title>* Contact * Evan Hughes * ITIS 3135*</title>
+        <title>* Tables * Evan Hughes * ITIS 3135*</title>
         <script>document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
             </script>
@@ -15,7 +15,7 @@
     <body>
         <nav>
             <ul>
-                <li><img src='images/hedgehog.png' alt='hedgehog logo' height='40' width='40' style='filter: invert(92%) sepia(15%) saturate(245%) hue-rotate(130deg) brightness(95%) contrast(82%); padding-left: 0.1em;'></li>
+                <li><img src='../images/hedgehog.png' alt='hedgehog logo' height='40' width='40' style='filter: invert(92%) sepia(15%) saturate(245%) hue-rotate(130deg) brightness(95%) contrast(82%); padding-left: 0.1em;'></li>
                 <li><a href="index.html">Homepage</a></li>
                 <li>
                     <div class='dropdown'>
@@ -55,11 +55,120 @@
         </nav>
       
       <header>
-          <h1>Evan Hughes * ITIS 3135</h1>
+        <h1>Evan Hughes * ITIS 3135</h1>
       </header>
       
       <main>
-        <h2>Contact</h2>
+        <h2>Activity 2: Tables</h2>
+        <h3>My Data</h3>
+        <ol start='0'>
+            <li>Evan Hughes ehughe29@uncc.edu 3</li>
+            <li>Hannah Grubb hgrubb@uncc.edu 2</li>
+            <li>Jacob Arrowood jarrow@uncc.edu 2</li>
+            <li>Joe Mama jmama@gmail.com 42</li>
+            <li>Hugh Mungus hmungus@outlook.com 1</li>
+            <li>I.C. Weiner icweiner@hotmail.com 2</li>
+            <li>Seymour Asses sasses@gmail.com 13</li>
+        </ol>
+        <h3>Employee Data in simple table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Evan Hughes</td>
+                <td>ehughe29@uncc.edu</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Hannah Grubb</td>
+                <td>hgrubb@uncc.edu</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Jacob Arrowood</td>
+                <td>jarrow@uncc.edu</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Joe Mama</td>
+                <td>jmama@gmail.com</td>
+                <td>42</td>
+            </tr>
+            <tr>
+                <td>Hugh Mungus</td>
+                <td>hmungus@outlook.com</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>I.C. Weiner</td>
+                <td>icweiner@hotmail.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Seymour Asses</td>
+                <td>sasses@gmail.com</td>
+                <td>13</td>
+            </tr>
+        </table>
+        <h3>Employee Data in complex table</h3>
+        <table>
+            <tr>
+                <th id='colEmp'>Employment Level</th>
+                <th id='colName'>Name</th>
+                <th id='colEmail'>Email</th>
+                <th id='colYears'>Years of Service</th>
+                <th id='colSalary'>Monthly Salary</th>
+            </tr>
+            <tr>
+                <td headers='colEmp'>Boss</td>
+                <td headers='colName'>Evan Hughes</td>
+                <td headers='colEmail'>ehughe29@uncc.edu</td>
+                <td headers='colYears'>3</td>
+                <td headers='colSalary'>$1,000,000.99</td>
+            </tr>
+            <tr>
+                <td headers='colEmp'>Art and Design</td>
+                <td headers='colName'>Hannah Grubb</td>
+                <td headers='colEmail'>hgrubb@uncc.edu</td>
+                <td headers='colYears'>2</td>
+                <td headers='colSalary'>$0.99</td>
+            </tr>
+            <tr>
+                <td headers='colEmp' rowspan="2">Business Manager</td>
+                <td headers='colName'>Jacob Arrowood</td>
+                <td headers='colEmail'>jarrow@uncc.edu</td>
+                <td headers='colYears'>2</td>
+                <td headers='colSalary'>$420,000.99</td>
+            </tr>
+            <tr>
+                <td headers='colName'>Joe Mama</td>
+                <td headers='colEmail'>jmama@gmail.com</td>
+                <td headers='colYears'>42</td>
+                <td headers='colSalary'>$540,000.54</td>
+            </tr>
+            <tr>
+                <td headers='colEmp' rowspan="3">Sales Associates</td>
+                <td headers='colName'>Hugh Mungus</td>
+                <td headers='colEmail'>hmungus@outlook.com</td>
+                <td headers='colYears'>1</td>
+                <td headers='colSalary'>$69,000.58</td>
+            </tr>
+            <tr>
+                <td headers='colName'>I.C. Weiner</td>
+                <td headers='colEmail'>icweiner@hotmail.com</td>
+                <td headers='colYears'>2</td>
+                <td headers='colSalary'>$89,000.99</td>
+            </tr>
+            <tr>
+                <td headers='colName'>Seymour Asses</td>
+                <td headers='colEmail'>sasses@gmail.com</td>
+                <td headers='colYears'>13</td>
+                <td headers='colSalary'>$129,000.99</td>
+            </tr>
+        </table>
       </main>
   
       <footer>
