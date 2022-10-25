@@ -12,115 +12,21 @@
             document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
         </script> 
+        <!--
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>-->
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><img src='images/hedgehog.png' alt='hedgehog logo' height='40' width='40' style='filter: invert(92%) sepia(15%) saturate(245%) hue-rotate(130deg) brightness(95%) contrast(82%); padding-left: 0.1em;'></li>
-                <li><a href="index.html">Homepage</a></li>
-                <li>
-                    <div class='dropdown'>
-                        <a class='dropbtn'>Page Links</a>
-                        <div class='dropdown-content'>
-                            <a href="https://howstheaqua.github.io/">Github Repository</a>
-                            <a href="https://howstheaqua.github.io/itis3135">3135 Course Page</a>
-                            <a href="https://webpages.charlotte.edu/ehughe29/" target="_blank">UNCC Personal Webpage</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class='dropdown'>
-                        <a href='contact.html' class='dropbtn'>Personal Links</a>
-                        <div class='dropdown-content'>
-                            <a href="https://github.com/howstheaqua" target="_blank">Github</a>
-                            <a href="https://www.linkedin.com/in/evan-a-hughes/" target="_blank">LinkedIn</a>
-                            <a href="https://www.freecodecamp.org/evanahughes" target='_blank'>freeCodeCamp</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="introduction.html">Introduction</a></li>
-                <li>
-                    <div class='dropdown'>
-                        <a class='dropbtn'>Course Assignments</a>
-                        <div class='dropdown-content'>
-                            <a href="contract.html">Contract</a>
-                            <a href="tables.html">Activity 2: Tables</a>
-                            <a href="forms.html">Activity 3: Forms</a>
-                            <a href="evanhughes.dev/index.html">Activity 4: Enhancing your Firm</a>
-                            <a href="firstscripts.html">Activity 5: First JavaScripts</a>
-                            <a href="arrays.html">Activity 8: Arrays</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+        <div data-include="components/header.html"></div>
       
       <header>
         <h1>Evan Hughes * ITIS 3135</h1>
       </header>
-      
       <main>
         <h2 class="header">ITIS 3135 Landing Page</h2>
         <p>This is the main course page for the ITIS 3135 class. This is where all of my class assignments will be located</p>
       </main>
-  
-      <footer>
-        <div class='foot center'>
-            <ul>
-                <li><a href="https://www.flaticon.com/free-icons/hedgehog" title="hedgehog icons">Hedgehog icons created by Freepik - Flaticon</a></li>
-                <li>
-                    <div class='dropup'>
-                        <button class='dropbtn'>Page Links</button>
-                        <div class='dropup-content'>
-                            <a href="https://howstheaqua.github.io/">Github Repository</a>
-                            <a href="https://howstheaqua.github.io/itis3135">3135 Course Page</a>
-                            <a href="https://webpages.charlotte.edu/ehughe29/" target="_blank">UNCC Personal Webpage</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class='dropup'>
-                        <a class='dropbtn' href='contact.html'>Personal Links</a>
-                        <div class='dropup-content'>
-                            <a href="https://github.com/howstheaqua" target="_blank">Github</a>
-                            <a href="https://www.linkedin.com/in/evan-a-hughes/" target="_blank">LinkedIn</a>
-                            <a href="https://www.freecodecamp.org/evanahughes" target='_blank'>freeCodeCamp</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class='dropup'>
-                        <button class='dropbtn'>Course Assignments</button>
-                        <div class='dropup-content'>
-                            <a href="contract.html">Contract</a>
-                            <a href="tables.html">Activity 2: Tables</a>
-                            <a href="forms.html">Activity 3: Forms</a>
-                            <a href="evanhughes.dev/index.html">Activity 4: Enhancing your Firm</a>
-                            <a href="firstscripts.html">Activity 5: First JavaScripts</a>
-                            <a href="arrays.html">Activity 8: Arrays</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class='fixedfooter'>
-        <ul>
-            <li>
-                <a id="validation_link_html" href="https://validator.w3.org/check?uri=referer">
-                    <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML.">
-                </a>
-            </li>
-            <li>
-                <a  id="validation_link_css" href="https://jigsaw.w3.org/css-validator/check/referer">
-                    <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS.">
-                </a>
-            </li>
-            
-            <li style="padding: 0; margin: 0;">
-                <p style="padding-top:1em; margin: 0;">Created by the prickly Effable Hedgehog &copy; 2022</p>
-            </li>
-        </ul>
-        </div>   
-      </footer>
+      <div data-include='components/footer.html'></div>
+      <script src="scripts/HTMLInclude.min.js"></script>
   </body>
 </html>
