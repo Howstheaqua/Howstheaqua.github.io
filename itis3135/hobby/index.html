@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script>document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <title>Mechanical Keyboards Hobby Page</title>
         <style>
             body{
                 background-color: bisque;
@@ -11,31 +16,48 @@
             #parts-page{
                 display: none;
             }
-            a{
+            nav a{
                 text-decoration: none;
                 padding: 5px;
                 border: 1px solid #000000;
+                color: #000000;
             }
-            a:hover {
+            nav a:hover {
                 background-color: #000000;
                 color: #ffffff;
             }
             h1{
                 text-align: center;
             }
+            h2{
+                text-align: center;
+            }
             li {
                 padding: 10px;
+            }x
+            nav {
+                display: inline;
+                justify-content: center;
             }
         </style>
     </head>
     <body>
         <header>
-
-        </header>
-        <main>
             <h1>Mechanical Keyboards</h1>
+        </header>
+        <nav>
+            <a onclick="hide('home-page')">Home</a>
+            <a onclick="hide('parts-page')">Parts</a>
+            <a onclick="hide('switches-page')">Switches</a>
+            <a onclick="hide('plates-page')">Plates</a>
+            <a onclick="hide('cases-page')">Cases</a>
+            <a onclick="hide('mounts-page')">Mounts</a>
+            <a onclick="hide('construction-page')">Construction</a>
+        </nav>
+        <main>
             <section id='home-page'>
                 <h2>Home</h2>
+                <p>My name is Evan Hughes and mechanical keyboards are my hobby. I really enjoy to build, modify, and learn all about mechanical keyboards. This webpage will be dedicated to all about mechanical keyboards.</p>
             </section>
             <section id='parts-page'>
                 <h2>Parts</h2>
@@ -57,10 +79,35 @@
             </section>
         </main>
         <footer>
-            <ul>
-                <li><a>HTLM Validation</a></li>
-                <li><a>CSS Validation</a></li>
-            </ul>
+            <a id="validation_link_html" href="https://validator.w3.org/check?uri=referer">
+                <img src="../images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML.">
+            </a>
+            <a  id="validation_link_css" href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="../images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS.">
+            </a>
         </footer>
+        <script>
+            function hide(id)
+            {
+                hide_all();
+                const section = document.getElementById(id);
+                if (section.style.display === "none") {
+                    section.style.display = "block";
+                } else {
+                    section.style.display = "none";
+                }
+            }
+            function hide_all()
+            {
+                const sections = document.getElementsByTagName('section');
+                for (const section of sections){
+                    section.style.display = 'none';
+                }
+            }
+            window.onload = function() {
+                hide_all();
+                hide('home-page');
+            };
+        </script>
     </body>
 </html>

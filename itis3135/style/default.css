@@ -267,10 +267,8 @@ tr:nth-child(even){
 form input[type=reset], form input[type=submit]{
     background-color: #151315;
     color:#bed8d8;
-    width: auto();
 }
 form input[type=text], form input[type=number]{
-    size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:#170312;
     width: 100%;
@@ -279,7 +277,6 @@ form input[type=text], form input[type=number]{
     box-sizing: border-box;
 }
 form input[type=text]:focus, form input[type=number]:focus{
-    size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #d2e9a7;
     width: 100%;
