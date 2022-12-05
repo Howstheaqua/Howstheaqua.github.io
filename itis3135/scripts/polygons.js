@@ -1,5 +1,5 @@
 let num_of_sides = 0
-function getNumber()
+function validateEntry()
 {
     num_of_sides = Math.abs(parseInt(prompt("The Effable Hedgehog would like to know how many sides your polygon has(0-10): ")));
     while(num_of_sides < 0 || num_of_sides > 10)
