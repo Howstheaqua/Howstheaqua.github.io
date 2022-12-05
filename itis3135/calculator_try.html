@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/default.css">
+        <link rel="stylesheet" href="style/calculator.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>* Calculator * Evan Hughes * ITIS 3135 *</title>
+        <script>document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </head>
+    <body>
+        <div data-include='components/header.html'></div>
+      
+        <main>
+            <h2>Activity 7: Calculator</h2>
+            <div class="container">
+                <input type="text" class="result" id="result" readonly>
+                <table>
+                  <tr>
+                    <td><input type="button" value="7" id="b7"></td>
+                    <td><input type="button" value="8" id="b8"></td>
+                    <td><input type="button" value="9" id="b9"></td>
+                    <td><input type="button" value="/" id="divide" disabled="true" class='operation'></td>
+                  </tr>
+                  <tr>
+                    <td><input type="button" value="4" id="b4"></td>
+                    <td><input type="button" value="5" id="b5"></td>
+                    <td><input type="button" value="6" id="b6"></td>
+                    <td><input type="button" value="*" id='multiply' disabled="true" class='operation'></td>
+                  </tr>
+                  <tr>
+                    <td><input type="button" value="1" id="b1"></td>
+                    <td><input type="button" value="2" id="b2"></td>
+                    <td><input type="button" value="3" id="b3"></td>
+                    <td><input type="button" value="-" id="sub" class='operation' disabled="true"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input type="button" value="0" id="b0" class="grey"></td>
+                    <td><input type="button" value="." id="decimal" disabled="true"></td>
+                    <td><input type="button" value="+" id="add" disabled="true" class='operation'></td>
+                  </tr>
+                  <tr>
+                    <td><input type="button" value="C" id="clear"></td>
+                    <td colspan="3"><input type="button" value="=" id="calc" disabled="true"></td>
+                  </tr>
+                </table>
+              </div>
+        </main>
+        <div data-include='components/footer.html'></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/calculator.js"></script>
+    </body>
+</html>
