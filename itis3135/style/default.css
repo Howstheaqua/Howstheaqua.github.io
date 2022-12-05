@@ -284,3 +284,17 @@ form input[type=text]:focus, form input[type=number]:focus{
     margin: 8px 0;
     box-sizing: border-box;
 }
+.button {
+    border: 1px solid #08415C;
+    text-decoration: none;
+    padding: 4px;
+    background-color: #CCE2A3;
+    color: #403940;
+    display: grid;
+    place-items: center;
+}
+
+.button:hover{
+    background-color: #151315;
+    color: #667151
+}
