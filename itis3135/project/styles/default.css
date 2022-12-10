@@ -1,0 +1,122 @@
+body{
+    background-color: #bb8ebb;
+    margin-bottom: 4.5em;
+    font-family: 'Roboto', sans-serif;
+    
+}
+header{
+    top:0;
+    text-align: center;
+    font-weight: bold;
+    background-color: #CCE2A3;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: #08415C;
+    text-align: center;
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+header h1{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding-top: 0.87em;
+}
+
+main {
+    width: 75%;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d8bed8;
+    color: #170312;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.3em;
+    padding-bottom: 1em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    z-index: 1;
+    
+}
+main h2{
+    text-align: center;
+}
+main figure{
+    text-align: center;
+}
+main figure img{
+    max-width: 100%;
+    height: auto;
+}
+.foot{
+    border-top: 0.15em solid #151315; 
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CCE2A3;
+    color: #170312;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+}
+.foot li a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+    font-size: inherit;
+}
+.foot li {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 1em;
+}
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #403940;
+    position: fixed;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+    padding: 0;
+    transition: top 0.3s;
+    color: #bed8d8;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+nav li {
+    float: left;
+}
+nav a{
+    color: #bed8d8;
+}
+nav li a {
+    display: block;
+    color: #bed8d8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav li a:hover{
+    background-color: #151315;
+}
+
+
+
+.center{
+    justify-content: center;
+}
