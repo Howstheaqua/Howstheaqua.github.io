@@ -1,5 +1,5 @@
 body{
-    background-color: #bb8ebb;
+    background-color: #8080ff;
     margin-bottom: 4.5em;
     font-family: 'Roboto', sans-serif;
     
@@ -8,22 +8,24 @@ header{
     top:0;
     text-align: center;
     font-weight: bold;
-    background-color: #CCE2A3;
+    background-color: #ffffcc;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
-    color: #08415C;
+    color: #141515;
     text-align: center;
+    border: 4px solid #000000;
     border-bottom-left-radius: 0.8em;
     border-bottom-right-radius: 0.8em;
     margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    margin-bottom: -0.1em;
 }
 header h1{
     margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    padding-top: 0.87em;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 
 main {
@@ -31,15 +33,16 @@ main {
     min-height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #d8bed8;
+    background-color: #ccccff;
     color: #170312;
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-top: 0.3em;
     padding-bottom: 1em;
-    border-top-left-radius: 0.4em;
-    border-top-right-radius: 0.4em;
+    border-top-left-radius: 0.1em;
+    border-top-right-radius: 0.1em;
     z-index: 1;
+    border: 4px solid #000000;
     
 }
 main h2{
@@ -57,12 +60,13 @@ main figure img{
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #CCE2A3;
+    background-color: #ffffcc;
     color: #170312;
     padding-left: 1.5em;
     padding-right: 1.5em;
     border-bottom-left-radius: 0.4em;
     border-bottom-right-radius: 0.4em;
+    border: 4px solid #000000;
 }
 .foot li a{
     text-decoration: none;
@@ -72,6 +76,7 @@ main figure img{
     border-radius: 5px;
     font-size: inherit;
 }
+
 .foot li {
     display: inline-block;
     text-align: center;
@@ -81,17 +86,18 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #403940;
+    background-color: #66667f;
+    text-align: center;
     position: fixed;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     margin: 0;
     padding: 0;
     transition: top 0.3s;
     color: #bed8d8;
+    border-bottom: 4px solid #000000;
 }
 nav ul {
     list-style-type: none;
+    display: inline-block;
     margin: 0 auto;
     padding: 0;
   }
@@ -115,8 +121,16 @@ nav li a:hover{
     background-color: #151315;
 }
 
+.foot li a:hover{
+    background-color: #667151;
+}
 
-
+.foot li a:hover{
+    background-color: #667151;
+}
+.cursorpointer:hover{
+    cursor: pointer;
+}
 .center{
     justify-content: center;
 }
