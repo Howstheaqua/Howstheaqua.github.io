@@ -12,6 +12,7 @@
                 background-color: bisque;
                 margin: auto;
                 width: 60%;
+                text-align: center;
             }
             #parts-page{
                 display: none;
@@ -26,6 +27,13 @@
                 background-color: #000000;
                 color: #ffffff;
             }
+            dl, p{
+                text-align: justify;
+            }
+            dt{
+                padding: 15px;
+                text-align: center;
+            }
             h1{
                 text-align: center;
             }
@@ -39,6 +47,10 @@
                 display: inline;
                 justify-content: center;
             }
+            figure{
+                float:left;
+                margin: 12px;
+            }
         </style>
     </head>
     <body>
@@ -48,45 +60,178 @@
         <nav>
             <a onclick="hide('home-page')">Home</a>
             <a onclick="hide('parts-page')">Parts</a>
+            <a onclick="hide('form-page')">Form Factors</a>
             <a onclick="hide('switches-page')">Switches</a>
             <a onclick="hide('plates-page')">Plates</a>
             <a onclick="hide('cases-page')">Cases</a>
+            <a onclick="hide('keycaps-page')">Keycaps</a>
+            <a onclick="hide('profiles-page')">Profiles</a>
             <a onclick="hide('mounts-page')">Mounts</a>
-            <a onclick="hide('construction-page')">Construction</a>
         </nav>
         <main>
             <section id='home-page'>
                 <h2>Home</h2>
+                <figure>
+                    <img src="images/keyboard.jpg" alt="Keyboard Parts" height="250" >
+                    <figcaption>My Keyboard</figcaption>
+                </figure>
                 <p>My name is Evan Hughes and mechanical keyboards are my hobby. I really enjoy building, modifying, and learning all about mechanical keyboards. This webpage will be dedicated to all about mechanical keyboards.</p>
             </section>
             <section id='parts-page'>
                 <h2>Parts</h2>
                 <h3>This section will identify all the different parts that go into constructing a mechanical keyboard.</h3>
+                <figure>
+                    <img src="images/keyboard.jpg" alt="Keyboard Parts" height="250" >
+                    <figcaption>My Keyboard</figcaption>
+                </figure>
                 <dl>
+                    <dt>Form Factors</dt>
+                    <dd>The defining part of any keyboard is the form factor. This is the shape of the keyboard. There are many different form factors that are available.</dd>
                     <dt>Key Switches</dt>
                     <dd>The most important part that makes these keyboards what they are are the key switches. 
                         These are the parts that go under the keys and activate to signal that you have pressed that key. These are mechanical switches and thats what gives the keyboard its name.</dd>
+                    <dt>PCB</dt>
+                    <dd>The next most important part is the PCB(<em>Printed Circuit Board</em>), which is where the switches are attached to. The PCB functions at the brain of the keyboard.</dd>
+                    <dt>Plate</dt>
+                    <dd>The next part is the plate that sits between the switches and PCB and holds everything in the right place. This is also where the stabilizers live to support the larger keys like space and enter.</dd>
+                    <dt>Case</dt>
+                    <dd>The case is the final part that wraps everything up in one nice big package.</dd>
+                    <dt>Keycaps</dt>
+                    <dd>The keycaps are the final part that completes the keyboard. These are the parts that you actually press to activate the switches.</dd>
                 </dl>
-                <p>The most important part that makes these keyboards what they are are the key switches. 
-                    These are the parts that go under the keys and activate to signal that you have pressed that key. These are mechanical switches and thats what gives the keyboard its name. 
-                    The next most important part is the PCB(<em>Printed Circuit Board</em>), which is where the switches are attached to. The PCB functions at the brain of the keyboard.
-                    The next part is the plate that sits between the switches and PCB and holds everything in the right place. This is also where the stabilizers live to support the larger keys like space and enter.
-                    The case is the final part that wraps everything up in one nice big package. </p>
+            </section>
+            <section id='form-page'>
+                <h2>Form Factors</h2>
+                <h3>This section will identify all the different form factors that are available.</h3>
+                <figure>
+                    <img src="images/form.svg" alt="Form Factors" height="250" >
+                    <figcaption>Form Factors</figcaption>
+                </figure>
+                <dl>
+                    <dt>TKL</dt>
+                    <dd>TKL stands for Ten Key Less. It is a 80% keyboard that does not have a number pad. This is a quite popular keyboard form factor because it is smaller than full size boards. It retains a lot of functionality like the function keys and arrow keys, while only sacrificing
+                        the number pad which a lot of people don't mind losing.</dd>
+                    <dt>Full Size</dt>
+                    <dd>Full size keyboards are the most common type of keyboard. They are just standard keyboard and most desktop computers have them.</dd>
+                    <dt>60%</dt>
+                    <dd>60% keyboards are the smallest widely available form factor. They are the most compact and portable. They lose out on functionality like arrow keys and function keys.</dd>
+                    <dt>75%</dt>
+                    <dd>75% keyboards are the second smallest form factor. They are slightly larger than 60% keyboards but are still very compact and portable. They are basically a compact TKL keyboard with a few missing keys.</dd>
+                    <dt>Other</dt>
+                    <dd>There are many other niche form factors that are available. Some of these include 40% and 65%. These are pretty rare to find and are typically more expensive</dd>
+                </dl>
             </section>
             <section id='switches-page'>
                 <h2>Switches</h2>
+                <h3>This section will identify all the different types of switches that are available.</h3>
+                <figure>
+                    <img src="images/switch.png" alt="Mechanical Switch" height="250" >
+                    <figcaption>Mechanical Switch</figcaption>
+                </figure>
+                <dl>
+                    <dt>Linear</dt>
+                    <dd>Linear switches are the most common type of switch. They have a smooth linear feel to them and are the easiest to get used to. The switch moves straight down and activates at a certain point</dd>
+                    <dt>Tactile</dt>
+                    <dd>Tactile switches are the next most common type of switch. They have a bump in the middle of the switch that you can feel when you press the key. This bump is what gives the tactile feel to the switch. This bump is also when the switch activate</dd>
+                    <dt>Clicky</dt>
+                    <dd>Clicky switches are the least common type of switch. They have a bump in the middle of the switch that you can feel when you press the key, however this bump also makes an audible click when it is activated.</dd>
+                </dl>
+                <p>I personally like linear switches the most. I believe that these switches give the best feel while typing and make typing enjoyable. My keyboard has a switch called milky yellows made by a company called Gateron</p>
             </section>
             <section id='plates-page'>
                 <h2>Plates</h2>
+                <h3>This section will identify all the different types of plates that are available.</h3>
+                <figure>
+                    <img src="images/plate.jpg" alt="Plate" height="250" >
+                <figcaption>Plate</figcaption>
+                </figure>
+                <p>The main difference between plates are the material they are made up. While different materials are more expensive than other the reason for the difference is typing feel. Different
+                    materials have different feels to them and some people prefer one over the other.</p>
+                <dl>
+                    <dt>Aluminum</dt>
+                    <dd>Aluminum plates are the most common type of plate. They are the cheapest and are the easiest to work with. They are also the lightest and have the most consistent feel to them.</dd>
+                    <dt>Stainless Steel</dt>
+                    <dd>Stainless steel plates are the next most common type of plate. They are more expensive than aluminum plates but are also more durable. They are also heavier than aluminum plates and have a more consistent feel to them.</dd>
+                    <dt>Brass</dt>
+                    <dd>Brass plates are the least common type of plate. They are the most expensive and are also the heaviest. They have a very consistent feel to them and are also very durable.</dd>
+                </dl>
+                <p>My keyboard has an aluminum plate. I mostly chose it because it was cheap and worked with my unique form factor.</p>
             </section>
             <section id='cases-page'>
                 <h2>Cases</h2>
+                <h3>This section will identify all the different types of cases that are available.</h3>
+                <figure>
+                    <img src="images/case.jpg" alt="Case" height="250" >
+                    <figcaption>Case</figcaption>
+                </figure>
+                <p>Cases are one half of customizing the look of your keyboard. My keyboard has a wooden case and I think it looks really cool. However it as quite expensive</p>
+                <dl>
+                    <dt>Plastic</dt>
+                    <dd>Plastic cases are the most common type of case. They are the cheapest and are the easiest to work with. They are also the lightest and have the most consistent feel to them.</dd>
+                    <dt>Aluminum</dt>
+                    <dd>Aluminum cases are the next most common type of case. They are more expensive than plastic cases but are also more durable. They are also heavier than plastic cases meaning they are less likely to move while typing.</dd>
+                    <dt>Wood</dt>
+                    <dd>Wood cases are the least common type of case. They are the most expensive and are also the heaviest.</dd>
+                    <dt>Other</dt>
+                    <dd>There are other types of cases that are available. These include acrylic, carbon fiber, and even 3D printed cases. These cases are all very expensive and are not very common.</dd>
+                </dl>
+                <p>I picked a wooden case because it was easily available at the time and it looks really nice.</p>
+            </section>
+            <section id='keycaps-page'>
+                <h2>Keycaps</h2>
+                <h3>This section will identify all the different types of keycaps that are available.</h3>
+                <figure>
+                    <img src="images/keycaps.png" alt="Keycap" height="250" >
+                    <figcaption>Keycap</figcaption>
+                </figure>
+                <p>Keycaps are the other half of customizing the look of your keyboard. My keyboard has a wooden case and I think it looks really cool. However it as quite expensive</p>
+                <dl>
+                    <dt>PBT</dt>
+                    <dd>PBT keycaps are the most common type of keycap. They are the cheapest and it is very apparent. They wear down very quickly</dd>
+                    <dt>ABS</dt>
+                    <dd>ABS keycaps are the next most common type of keycap. They are more expensive than PBT keycaps but are also more durable.</dd>
+                    <dt>Other</dt>
+                    <dd>There are other types of keycaps that are available. These include POM, DSA, and even 3D printed keycaps. These keycaps are all very expensive and are not very common.</dd>
+                </dl>
+                <p>My keyboard uses PBT keycaps because they are the most common and are the cheapest.</p>
+            </section>
+            <section id="profiles-page">
+                <h2>Profiles</h2>
+                <h3>This section will identify all the different types of profiles that are available.</h3>
+                <figure>
+                    <img src="images/profiles.png" alt="Profile" height="250" >
+                    <figcaption>Profiles</figcaption>
+                </figure>
+                <p>Profiles are a defining feature of keycaps. They change not only the look of your keyboard but they also change the feel</p>
+                <dl>
+                    <dt>Cherry/OEM</dt>
+                    <dd>Cherry keycaps is the most common type of profile because it is used by people who don't know what it is. Most desktop keyboards in offices or other common places use this profile.</dd>
+                    <dt>SA</dt>
+                    <dd>SA keycaps are a classic keycap because this is the profile used in the 80s and 90s when computers were becoming popular.</dd>
+                    <dt>DSA</dt>
+                    <dd>DSA keycaps are all the same and have no different between the rows.</dd>
+                    <dt>Other</dt>
+                    <dd>There are other types of keycaps that are available. These include GMK, XDA, and even 3D printed keycaps. These keycaps are all very expensive and are not very common.</dd>
+                </dl>
+                <p>I picked SA keycaps for my keyboard because they look cool and have a nostalgic feel to them.</p>
             </section>
             <section id='mounts-page'>
                 <h2>Mounting Methods</h2>
-            </section>
-            <section id='construction-page'>
-                <h2>Construction of Keyboards</h2>
+                <h3>This section will identify all the different types of mounting methods that are available.</h3>
+                <figure>
+                    <img src="images/mount.jpg" alt="Mount" height="250" >
+                    <figcaption>Mount</figcaption>
+                </figure>
+                <p>Mounting methods play a big part in how the keyboard will feel and sound</p>
+                <dl>
+                    <dt>Plate Mounted</dt>
+                    <dd>Plate mounted keyboards are the most common type of keyboard. With this method the plate is what is attached to the case.</dd>
+                    <dt>PCB Mounted</dt>
+                    <dd>PCB mounted keyboards have the PCB screwed into the case.</dd>
+                    <dt>Other</dt>
+                    <dd>There are other mounting methods but are uncommon and not really used except in very very expensive keyboard</dd>
+                </dl>
+                <p>My keyboard uses plate mount because it is the most common and cheapest.</p>
             </section>
         </main>
         <footer>
@@ -96,6 +241,7 @@
             <a  id="validation_link_css" href="https://jigsaw.w3.org/css-validator/check/referer">
                 <img src="../images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS.">
             </a>
+            <a href="../evanhughes.dev/index.html">Designed by Evan Hughes</a>
         </footer>
         <script>
             function hide(id)
