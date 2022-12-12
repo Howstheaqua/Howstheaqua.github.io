@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style/default.css" >
+        <link rel="stylesheet" href="style/slideshow.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>* Slideshow * Evan Hughes * ITIS 3135*</title>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script> 
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+
+      <main>
+        <h2>Activity 9: Slideshow</h2>
+        
+        <!-- Image container of the image slider -->
+    <div class="image-container">
+        <div class="slide">
+            <img src="images/bunny1.jpg">
+        </div>
+        <div class="slide">
+            <img src="images/bunny2.jpg">
+        </div>
+        <div class="slide">
+            <img src="images/bunny3.jpg">
+        </div>
+        <div class="slide">
+            <img src='images/bunny4.jpg'>
+        </div>
+        <div class="slide">
+            <img src='images/bunny5.jpg'>
+        </div>
+        <div class="slide">
+            <img src='images/bunny6.jpg'>
+        </div>
+        <!-- Next and Previous icon to change images -->
+        <a class="previous" onclick="moveSlides(-1)">
+            <i class="fa fa-chevron-circle-left"></i>
+        </a>
+        <a class="next" onclick="moveSlides(1)">
+            <i class="fa fa-chevron-circle-right"></i>
+        </a>
+    </div>
+    <br>
+  
+    <div style="text-align:center">
+        <span class="footerdot"
+            onclick="activeSlide(1)">
+        </span>
+        <span class="footerdot"
+            onclick="activeSlide(2)">
+        </span>
+        <span class="footerdot"
+            onclick="activeSlide(3)">
+        </span>
+        <span class="footerdot"
+            onclick="activeSlide(4)">
+        </span>
+        <span class="footerdot"
+            onclick="activeSlide(5)">
+        </span>
+        <span class="footerdot"
+            onclick="activeSlide(6)">
+        </span>
+    </div>
+
+      </main>
+      <div data-include='components/footer.html'></div>
+      <script src="scripts/HTMLInclude.min.js"></script>
+      <script src="scripts/slideshow.js"></script>
+  </body>
+</html>
