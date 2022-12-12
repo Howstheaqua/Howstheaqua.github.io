@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style/default.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>* Project * Evan Hughes * ITIS 3135*</title>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script> 
+        <!--
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>-->
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+
+      <main>
+        <h2 class="header">Final Project Deliverable Page</h2>
+        <p>This is the main course page for the ITIS 3135 class. This is where all of my class assignments will be located</p>
+        <h3>Project overview:</h3> 
+            <h3>Describe your application and its purpose.</h3> 
+                <h4>Intended users of the website.</h4> 
+                <span id="users">
+                    <ul>
+                        <li>People wanting to view the art portfolio of Hannah Grubb</li>
+                        <li>Employers</li>
+                        <li>Customers</li>
+                    </ul>
+                </span>
+                <h4>Overview of the content of the website</h4>
+                <span id="content">
+                    <ul>
+                        <li>Home page</li>
+                        <li>About page</li>
+                        <li>Artwork page</li>
+                        <li>Contact page</li>
+                        <li>Commission page</li>
+                        <li>Print order page</li>
+                    </ul>
+                </span>
+            <h3>Client Information</h3>
+                    <span id="client_information">
+                <h4>Client Name</h4>
+                    <p>Hannah Grubb</p>
+                <h4>Professional Site</h4>
+                <h4>Client Email</h4>
+                    <a href='email:hgrubb1@uncc.edu'>hgrubb1@uncc.edu</a>
+                <h4>Phone</h4>
+                    <p>[private]</p>
+                </span>
+        <h3>Wireframe</h3>
+        <figure>
+            <img src="images/wireframe.png" alt="wireframe" height='100'>
+        </figure>
+        <figcaption>Page Wireframe</figcaption>
+        <h3>Site Map</h3>
+        <figure>
+            <img src="images/sitemap.png" alt="site map" height="100">
+        </figure>
+        <figcaption>Site Map</figcaption>
+        <h3>Page Design</h3>
+        <ul>
+            <li>Home Page
+                <ul>
+                    <li>Purpose: To be a homepage the art portfolio of Hannah Grubb</li>
+                    <li>Audience: People wanting to view the art portfolio of Hannah Grubb</li>
+                    <li>Content: A menu linking to the other pages as well as a description of the website</li>
+                    <li>Interactivity: None</li>
+                </ul>
+            </li>
+            <li>About Page
+                <ul>
+                    <li>Purpose: To provide information about the artist</li>
+                    <li>Audience: People wanting to view the art portfolio of Hannah Grubb</li>
+                    <li>Content: A description of the artist and their art style</li>
+                    <li>Interactivity: None</li>
+                </ul>
+            </li>
+            <li>Artwork Page
+                <ul>
+                    <li>Purpose: To provide a gallery of the artist's work</li>
+                    <li>Audience: People wanting to view the art portfolio of Hannah Grubb</li>
+                    <li>Content: A gallery of the artist's work in the form of a slideshow</li>
+                    <li>Interactivity: None</li>
+                </ul>
+            </li>
+            <li>Contact Page
+                <ul>
+                    <li>Purpose: To provide a way for the artist to be contacted</li>
+                    <li>Audience: People wanting to view the art portfolio of Hannah Grubb</li>
+                    <li>Content: A form for the artist to be contacted</li>
+                    <li>Interactivity: None</li>
+                </ul>
+            </li>
+            <li>Commission Page
+                <ul>
+                    <li>Purpose: To provide a way for the artist to be commissioned</li>
+                    <li>Audience: People wanting to commission the artist</li>
+                    <li>Content: A form for the artist to be commissioned</li>
+                    <li>Interactivity: Accept a prompt from the user and a contact method. The contact method will need to be required and validated, The prompt will also be required.</li>
+                </ul>
+            </li>
+            <li>Print Order Page
+                <ul>
+                    <li>Purpose: To provide a way for the artist to sell prints of certain works</li>
+                    <li>Audience: People wanting to view the art portfolio of Hannah Grubb</li>
+                    <li>Content: A form for the artist to sell prints</li>
+                    <li>Interactivity: Accept an order from the user and a contact method. The contact method will need to be required and validated.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Dynamic Functionality</h3>
+        <ul>
+            <li>Have artwork displayed in a slideshow and have zoom and gallery options on the artwork page</li>
+            <li>Have a form that will accept a prompt from the user and a contact method. Javascript will be used to validate the inputs. This will be on the commission page</li>
+            <li>Form to accept print orders including work and numbers wanted. Will also generate a estimated quote. This will be on the Print order page.</li>
+        </ul>
+      </main>
+      <div data-include='components/footer.html'></div>
+      <script src="scripts/HTMLInclude.min.js"></script>
+  </body>
+</html>
