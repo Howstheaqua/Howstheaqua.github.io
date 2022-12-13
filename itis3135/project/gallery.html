@@ -4,9 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="style/default.css" >
+        <link rel="stylesheet" href="style/gallery.css">
+        <link rel="stylesheet" href="style/magnific-popup.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/992717df04.js" crossorigin="anonymous"></script>
         <title>Hannah Grubb's Art Portfolio</title>
         <script>
             document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
@@ -16,9 +19,71 @@
     <body>
         <div data-include="components/header.html"></div>
       <main>
-        <h2 class="header">Gallery Page</h2>
+        <div class="container">
+          <h2>Gallery</h2>
+            <section class="img-gallery-magnific">
+              <div class="magnific-img">
+                <a class="image-popup-vertical-fit" href="images/dinnerfortwo.jpg" title="Dinner for Two">
+                  <img class='gallery-img' src="images/dinnerfortwo.jpg" alt="Dinner for Two" >
+                </a>
+              </div>
+              <div class="magnific-img">
+                <a class="image-popup-vertical-fit" href="images/dogwalker.jpg" title="Dog Walker">
+                  <img class='gallery-img' src="images/dogwalker.jpg" alt="dog walker" >
+                  
+                </a>
+              </div>
+              <div class="magnific-img">
+                <a class="image-popup-vertical-fit" href="images/elmori.jpg" title="El Mori">
+                  <img class='gallery-img' src="images/elmori.jpg" alt="el mori" >
+                  
+                </a>
+              </div>
+              <div class="magnific-img">
+                <a class="image-popup-vertical-fit" href="images/night.jpg" title="Night">
+                  <img class='gallery-img' src="images/night.jpg" alt="night" >
+                  
+                </a>
+              </div>
+              <div class="magnific-img">
+                <a class="image-popup-vertical-fit" href="images/nuclearshit.jpg" title="Nuclear Shit">
+                  <img class='gallery-img' src="images/nuclearshit.jpg" alt="nuclear shit" >
+                  
+                </a>
+              </div>
+              <div class="magnific-img">
+                <a class="image-popup-vertical-fit" href="images/pastafarian.jpg" title="Pastafarian">
+                  <img class='gallery-img' src="images/pastafarian.jpg" alt="pastafarian" >
+                  
+                </a>
+              </div>
+              <div class="magnific-img">
+                <a class="image-popup-vertical-fit" href="images/pout.jpg" title="Pout">
+                  <img class='gallery-img' src="images/pout.jpg" alt="pout" >
+                  
+                </a>
+              </div>
+              <div class="magnific-img">
+                <a class="image-popup-vertical-fit" href="images/unjust.jpg" title="Unjust">
+                  <img class='gallery-img' src="images/unjust.jpg" alt="unjust" >
+                  
+                </a>
+              </div>
+              <div class="magnific-img">
+                <a class="image-popup-vertical-fit" href="images/us.jpg" title="Us">
+                  <img class='gallery-img' src="images/us.jpg" alt="Us" >
+                  
+                </a>
+              </div>
+            </section>
+            <div class="clear"></div>
+        </div>
       </main>
       <div data-include='components/footer.html'></div>
       <script src="scripts/HTMLInclude.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+      <script src="scripts/gallery.js"></script>
+      <script src="scripts/jquery.magnific-popup.js"></script>
   </body>
 </html>
