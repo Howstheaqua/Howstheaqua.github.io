@@ -1,7 +1,12 @@
-// jquery document ready function
+// jquery ready function
 $(document).ready(function() {
-    $("#turntable").turntable({
-        axis: 'scroll',
-        scrollStart: 'top',
+    $("#menu-description").accordion({
+        collapsible: true,
+        active: false,
+        heightStyle: "content"
     });
+    $('#MyTurntable').turntable({
+        axis: 'scroll',
+        scrollStart: 'top'
+      });
 });

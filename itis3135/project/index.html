@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
         <link rel="stylesheet" href="style/default.css" >
         <link rel="stylesheet" href="style/turntable.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,29 +20,49 @@
         <div data-include="components/header.html"></div>
       <main>
         <h2 class="header">Hannah Grubb Art Portfolio</h2>
-        <div class="menu">
-            <a href="gallery.html">Art Gallery</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact Me</a>
-            <a href="commission.html">Commission Artwork</a>
-            <a href="print.html">Print Order</a>
+        <p>This website serves as an art portfolio for me, Hannah Grubb. This site will include pages for my art, contact, about me, and commissions.</p>
+        <div class="turntable-container center released">
+            <div id="MyTurntable" class="turntable center">
+                <ul>
+                    <li data-img-src="images/dinnerfortwo.jpg"></li>
+                    <li data-img-src="images/dogwalker.jpg"></li>
+                    <li data-img-src="images/elmori.jpg"></li>
+                    <li data-img-src="images/night.jpg"></li>
+                    <li data-img-src="images/nuclearshit.jpg"></li>
+                    <li data-img-src="images/pastafarian.jpg"></li>
+                    <li data-img-src="images/pout.jpg"></li>
+                    <li data-img-src="images/unjust.jpg"></li>
+                    <li data-img-src="images/us.jpg"></li>
+                </ul>
+            </div>
         </div>
-        <div id="turntable" class="turntable">
-            <ul data-image-src="images/dinnerfortwo.jpg"></ul>
-            <ul data-image-src="images/dogwalker.jpg"></ul>
-            <ul data-image-src="images/elmori.jpg"></ul>
-            <ul data-image-src="images/night.jpg"></ul>
-            <ul data-image-src="images/nuclearshit.jpg"></ul>
-            <ul data-image-src="images/pastafarian.jpg"></ul>
-            <ul data-image-src="images/pout.jpg"></ul>
-            <ul data-image-src="images/unjust.jpg"></ul>
-            <ul data-image-src="images/us.jpg"></ul>
+        <div id="menu-description">
+            <h3>Art Gallery</h3>
+            <div>
+                <p>On this page you will be able to see a gallery of works completed by me for class assignments or for personal projects</p>
+                <a class='button' href="gallery.html">Click to Visit</a>
+            </div>
+            <h3>About Me</h3>
+            <div>
+                <p>On this page you will find information about me and my artwork.</p>
+                <a class='button' href="about.html">Click to Visit</a>
+            </div>
+            <h3>Contact Me</h3>
+            <div>
+                <p>This page you will be methods of contact for me, including email and linkree.</p>
+                <a class='button' href="contact.html">Click to Visit</a>
+            </div>
+            <h3>Commission Artwork</h3>
+            <div>
+                <p>This page has a form to submit commissions to me.</p>
+                <a class='button' href="commission.html">Click to Visit</a>
+            </div>
+        </div>
         </div>
       </main>
       <div data-include='components/footer.html'></div>
       <script src="scripts/HTMLInclude.min.js"></script>
-      <script src="scripts/HTMLInclude.min.js"></script>
-      <script src="scripts/jquery-3.6.2.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
       <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
       <script src="scripts/turntable.js"></script>
       <script src="scripts/index.js"></script>

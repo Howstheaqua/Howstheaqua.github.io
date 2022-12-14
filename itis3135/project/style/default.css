@@ -133,5 +133,23 @@ nav li a:hover{
     cursor: pointer;
 }
 .center{
+    display: flex;
     justify-content: center;
+}
+
+.button {
+    border: 1px solid #08415C;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 4px;
+    background-color: #8080ff;
+    color: #141515;
+}
+
+.button:hover{
+    background-color: #141515;
+    color: #8080ff;
+}
+.menu-description h3{
+    font-size: 40px;
 }

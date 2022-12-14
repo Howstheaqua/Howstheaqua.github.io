@@ -1,5 +1,9 @@
 .turntable {
-  margin: 0px; 
+  display: inline-block;
+  height: auto;
+  width: 20em;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .turntable ul {
   padding: 0px;
@@ -8,11 +12,26 @@
 .turntable ul li {
   list-style-type: none;
   display: none; 
+  position: relative;
 }
 .turntable ul li img {
-  width: 100%; 
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  border-radius: 10px;
 }
 .turntable ul li.active {
   display: block; 
 }
-   
+.turntable ul li:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.turntable-container{
+  padding-bottom: 1em;
+}
