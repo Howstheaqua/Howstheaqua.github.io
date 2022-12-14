@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="style/default.css" >
+        <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -17,18 +18,29 @@
         <div data-include="components/header.html"></div>
       <main>
         <h2 class="header">About Page</h2>
-        <p>My name is Hannah Grubb. I am a student at the University of North Carolina at Charlotte. I have been drawing
-          since I was a child and have always had a passion for art. I have been working on my art skills
-          for the past 10 years and have been able to improve my skills. I have been able to create a variety
-          of different art styles.</p>
-        <p>A goal that have as an Illustrator is to be well-rounded and multifaceted. 
-          The way that know I'm on the right track is that when start a piece, the world around me disappears.
-           I don't answer my phone, and the hours slip past me. I really love creating. 
-           Usually I am a perfectionist, so I keep on doing my work until am satisfied. I cannot just give up or say 
-           "Well, guess that's good enough"-- It has to be up to my standard. I also am able to get things done 
-           relatively quickly, as I get in a groove when I start projects.</p>
+        <div id="about">
+          <h3>Me</h3>
+          <div>
+            <p>My name is Hannah Grubb. I am a student at the University of North Carolina at Charlotte. I have been drawing
+              since I was a child and have always had a passion for art. I have been working on my art skills
+              for the past 10 years and have been able to improve my skills. I have been able to create a variety
+              of different art styles.</p>
+          </div>
+          <h3>Mission Statement</h3>
+          <div>
+            <p>A goal that have as an Illustrator is to be well-rounded and multifaceted. 
+              The way that know I'm on the right track is that when start a piece, the world around me disappears.
+              I don't answer my phone, and the hours slip past me. I really love creating. 
+              Usually I am a perfectionist, so I keep on doing my work until am satisfied. I cannot just give up or say 
+              "Well, guess that's good enough"-- It has to be up to my standard. I also am able to get things done 
+              relatively quickly, as I get in a groove when I start projects.</p>
+          </div>
+        </div>
       </main>
       <div data-include='components/footer.html'></div>
       <script src="scripts/HTMLInclude.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+      <script src="scripts/about.js"></script>
   </body>
 </html>
