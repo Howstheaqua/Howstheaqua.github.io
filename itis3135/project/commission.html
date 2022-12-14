@@ -17,8 +17,23 @@
         <div data-include="components/header.html"></div>
       <main>
         <h2 class="header">Commission Page</h2>
+        <form action='#' id="commission-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+        <div id="confirmation" class="order"></div>
       </main>
       <div data-include='components/footer.html'></div>
       <script src="scripts/HTMLInclude.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+      <script src="scripts/commission.js"></script>
   </body>
 </html>

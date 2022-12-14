@@ -8,12 +8,13 @@ function importGalleryInfo(){
   if (this.readyState == 4 && this.status == 200) {
    document.getElementById("gallery-container").innerHTML = this.responseText;
   }
+  magnific();
   };
   xhttp.open("GET", "components/gallery_images.html", true);
   xhttp.send();
 }
 
-$(document).ready(function(){
+function magnific(){
     $('.image-popup-vertical-fit').magnificPopup({
       type: 'image',
       mainClass: 'mfp-with-zoom', 
@@ -52,4 +53,4 @@ $(document).ready(function(){
     }
     });
     
-    });
+    }
