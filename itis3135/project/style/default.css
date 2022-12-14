@@ -153,3 +153,10 @@ nav li a:hover{
 .menu-description h3{
     font-size: 40px;
 }
+dt {
+    font-weight: bold;
+  }
+dd {
+    margin: 0;
+    padding: 0.5em;
+  }

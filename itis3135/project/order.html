@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="style/default.css" >
+        <link rel="stylesheet" href="style/order.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -16,11 +17,26 @@
     <body>
         <div data-include="components/header.html"></div>
       <main>
-        <h2 class="header">Contact</h2>
-        <div id="info"></div>
+        <h2 class="header">Order Page</h2>
+        <div class="center">
+            <img id='artwork' src="">
+        </div>
+        <h3 id="order">Ordering: </h3>
+        <form id="order-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="amount">How many to order: </label>
+            <input type="number" id="amount" name="amount" min="1" max="100" required>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="order-confirmation"></div>
       </main>
       <div data-include='components/footer.html'></div>
       <script src="scripts/HTMLInclude.min.js"></script>
-      <script src="scripts/contact.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+      <script src="scripts/order.js"></script>
   </body>
 </html>

@@ -1,0 +1,7 @@
+#artwork {
+    display: inline-block;
+  height: auto;
+  width: 20em;
+  max-width: 700px;
+  margin: 0 auto;
+}
