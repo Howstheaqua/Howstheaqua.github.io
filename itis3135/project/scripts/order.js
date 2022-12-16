@@ -12,31 +12,31 @@ $(document).ready(function() {
         let tax = 0;
         let total = 0;
         if(artworkName === "dinnerfortwo"){
-            artworkPrice = 100;
+            artworkPrice = 10;
         }
         else if(artworkName === "dogwalker"){
-            artworkPrice = 200;
+            artworkPrice = 20;
         }
         else if(artworkName === "elmori"){
-            artworkPrice = 300;
+            artworkPrice = 30;
         }
         else if(artworkName === "night"){
-            artworkPrice = 400;
+            artworkPrice = 40;
         }
         else if(artworkName === "nuclearshit"){
-            artworkPrice = 500;
+            artworkPrice = 50;
         }
         else if(artworkName === "pastafarian"){
-            artworkPrice = 600;
+            artworkPrice = 60;
         }
         else if(artworkName === "pout"){
-            artworkPrice = 700;
+            artworkPrice = 70;
         }
         else if(artworkName === "unjust"){
-            artworkPrice = 800;
+            artworkPrice = 80;
         }
         else if(artworkName === "us"){
-            artworkPrice = 900;
+            artworkPrice = 90;
         }
         tax = (artworkPrice * amount) * 0.07;
         total = (artworkPrice * amount) + tax;
